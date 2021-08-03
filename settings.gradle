@@ -1,0 +1,2 @@
+rootProject.name = "Digital_telent_Per_4"
+include ':app'
