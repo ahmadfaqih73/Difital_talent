@@ -32,9 +32,9 @@ public class Kalkulator extends AppCompatActivity {
                 double bilangan = Double.parseDouble(String.valueOf(Bilangan.getText()));
                 double Luaslingkarang = (3.14 * jari*jari);
                 double KLL = (3.14 *(2*jari));
-//               double perbandingan= (if (bilangan < jari){
-//                   hasil3.setText();
-//                });
+               double perbandingan= (if (bilangan < jari){
+                   hasil3.setText();
+                });
 
                 hasil.setText(String.valueOf(Luaslingkarang));
                 hasil2.setText(String.valueOf(KLL));
