@@ -10,18 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Digital_telent_Per_4">
         <activity
+            android:name=".Kalkulator"
+            android:exported="true"
+            android:label="Kalkulator"/>
+        <activity
             android:name=".Menu3"
             android:exported="true"
-            android:label="Latihan Menu 3"/>
+            android:label="Latihan Menu 3" />
         <activity
             android:name=".Menu2"
             android:exported="true"
-            android:label="Latihan Menu 2"/>
-
+            android:label="Latihan Menu 2" />
         <activity
             android:name=".Menu"
             android:exported="true"
-            android:label="Latihan menu"/>
+            android:label="Latihan menu" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

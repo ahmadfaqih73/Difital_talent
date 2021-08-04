@@ -11,8 +11,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
 
+
+public class MainActivity extends AppCompatActivity {
+    Button  btnKalkulator;
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 //
@@ -32,6 +34,15 @@ public class MainActivity extends AppCompatActivity {
 //                btn1.setBackgroundColor(Color.YELLOW);
 //            }
 //        });
+        btnKalkulator = findViewById(R.id.Button3);
+        btnKalkulator.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),Kalkulator.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
 
     }
