@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Kalkulator2">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input1"
+        android:id="@+id/angka"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:text="Masukkan Nilai"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+
+        android:hint="Masukkan Nilai pertama"
+        android:inputType="numberDecimal"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input1"
+        android:ems="10"
+        android:hint="Masukkan Nilai kedua"
+        android:inputType="numberDecimal"
+        android:textSize="14sp" />
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tambah"
+        android:text="+"
+        android:onClick="actionTambah"
+        android:layout_below="@+id/input2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="18dp"/>
+
+    <Button
+        android:id="@+id/kurang"
+        android:layout_width="80dp"
+        android:onClick="actionKurang"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tambah"
+        android:layout_alignBottom="@+id/tambah"
+        android:layout_toEndOf="@+id/tambah"
+        android:layout_toRightOf="@+id/tambah"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/kali"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:onClick="actionKali"
+        android:layout_alignBaseline="@+id/kurang"
+        android:layout_alignBottom="@+id/kurang"
+        android:layout_toEndOf="@+id/kurang"
+        android:layout_toRightOf="@+id/kurang"
+        android:text="X"
+        android:layout_marginLeft="15dp"/>
+    <Button
+        android:id="@+id/bagi"
+        android:layout_width="80dp"
+        android:onClick="actionBagi"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/kali"
+        android:layout_alignBottom="@+id/kali"
+        android:layout_toEndOf="@+id/kali"
+        android:layout_toRightOf="@+id/kali"
+        android:text="/"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/tambah"
+        android:id="@+id/hasil"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:text="0"
+        android:textSize="55sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hasil"
+        android:text="bersihkan"
+        android:id="@+id/bersih"
+        android:onClick="actionBersih"
+        />
+
+
+
+
+</RelativeLayout>

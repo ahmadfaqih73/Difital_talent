@@ -87,14 +87,14 @@
         android:textStyle="normal|bold" />
 
     <TextView
-        android:text="0"
+        android:id="@+id/hasil3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/hasil3"
         android:layout_below="@+id/textView3"
         android:layout_centerHorizontal="true"
-        android:textSize="36sp"
-        android:textAlignment="center" />
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="36sp" />
 
     <TextView
         android:id="@+id/textView3"
@@ -104,7 +104,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_marginTop="25dp"
-        android:text="hasil KLL"
+        android:text="Hasil KLL"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="normal|bold" />

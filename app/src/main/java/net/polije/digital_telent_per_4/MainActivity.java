@@ -14,7 +14,7 @@ import android.widget.Button;
 
 
 public class MainActivity extends AppCompatActivity {
-    Button  btnKalkulator;
+    Button  btnKalkulator,btninputnama;
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 //
@@ -27,6 +27,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        btninputnama = findViewById(R.id.Button4);
+        btninputnama.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,InputActivity.class);
+                startActivity(intent);
+            }
+        });
         final Button btn1 = findViewById(R.id.Button1);
 //        btn1.setOnClickListener(new View.OnClickListener() {
 //            @Override

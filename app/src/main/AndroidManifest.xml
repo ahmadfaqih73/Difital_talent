@@ -10,9 +10,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Digital_telent_Per_4">
         <activity
+            android:name=".Kalkulator2"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ListNegara_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".InputActivity"
+            android:exported="true"
+            android:label="Tampilan input"></activity>
+        <activity
             android:name=".Kalkulator"
             android:exported="true"
-            android:label="Kalkulator"/>
+            android:label="Kalkulator" />
         <activity
             android:name=".Menu3"
             android:exported="true"
@@ -25,13 +44,7 @@
             android:name=".Menu"
             android:exported="true"
             android:label="Latihan menu" />
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

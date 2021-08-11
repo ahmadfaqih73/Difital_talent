@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Kalkulator extends AppCompatActivity {
     private Button btnOperasi,btnbersihkan;
@@ -32,12 +33,19 @@ public class Kalkulator extends AppCompatActivity {
                 double bilangan = Double.parseDouble(String.valueOf(Bilangan.getText()));
                 double Luaslingkarang = (3.14 * jari*jari);
                 double KLL = (3.14 *(2*jari));
-               double perbandingan= (if (bilangan < jari){
-                   hasil3.setText();
-                });
+
+                  if (bilangan < jari){
+                    hasil2.setText("nilai bilangan lebih kecil dari pada jari'2");
+                }else if(bilangan > jari){
+                      hasil2.setText("nilai bilangan lebih besar dari pada jari'2");
+                  }
+                  else if(bilangan == jari){
+                      hasil2.setText("nilai bilangan sama jari'2");
+                  }
 
                 hasil.setText(String.valueOf(Luaslingkarang));
-                hasil2.setText(String.valueOf(KLL));
+                hasil3.setText(String.valueOf(KLL));
+
             }
         });
 
@@ -47,6 +55,7 @@ public class Kalkulator extends AppCompatActivity {
                 Jari.setText("");
                 hasil.setText("0");
                 hasil2.setText("0");
+                hasil3.setText("0");
             }
         });
 

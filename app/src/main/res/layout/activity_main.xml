@@ -30,6 +30,15 @@
         android:layout_below="@id/Button2"
         android:layout_centerInParent="true"
         />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="input nama"
+        android:id="@+id/Button4"
+        android:layout_below="@id/Button3"
+        android:layout_centerInParent="true"
+        />
 
 
 
