@@ -11,10 +11,12 @@
         android:theme="@style/Theme.Digital_telent_Per_4">
         <activity
             android:name=".Kalkulator2"
-            android:exported="true" />
+            android:exported="true"
+            android:label="Kalkulator"/>
         <activity
             android:name=".MainActivity2"
-            android:exported="true">
+            android:exported="true"
+            android:label="Pertemuan 7">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
